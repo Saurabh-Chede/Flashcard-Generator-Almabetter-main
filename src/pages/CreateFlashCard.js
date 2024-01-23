@@ -1,6 +1,6 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { Formik, Field, Form } from "formik";
+import { Formik, Field, Form, FieldArray } from "formik";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { MdUploadFile } from "react-icons/md";
 
@@ -52,6 +52,12 @@ function CreateFlashCard() {
                     {" "}
                     <MdUploadFile className=" text-[2em] text-blue-700" />
                     <span class="font-bold text-blue-700 ">Upload Image</span>
+                  {/* </label> */}
+                  <input className="hidden"
+                         name="upload_Image"
+                         id="upload_Image"
+                         type="file"
+                  ></input>
                   </label>
                 </div>
               </div>
@@ -77,6 +83,7 @@ function CreateFlashCard() {
               className="w-[100%] mt-3 pt-1 bg-white  flex flex-col text-left pl-[25px] commonBorder"
               name="TermCardfield"
             >
+             
               <div class="flex-col overflow-hidden bg-white rounded-md">
                 <div
                   name="termsDiv"
@@ -118,6 +125,11 @@ function CreateFlashCard() {
                       <span className="flex w-32 p-2 mx-auto font-bold text-blue-700 transition-all ease-in-out border border-blue-700 rounded-lg shadow-md hover:-translate-y-px hover:bg-blue-700 hover:text-white ">
                         Select Image
                       </span>
+                      <input className="hidden"
+                         name="Select image"
+                         id="Select image"
+                         type="file"
+                  ></input>
                     </label>
                   </div>
                 </div>
@@ -125,6 +137,7 @@ function CreateFlashCard() {
               <div className="inline-block mt-4 mb-6 font-bold text-blue-700 cursor-pointer mx-7">
                 + Add More
               </div>
+             
 
               {/* it's a create button to create a flashcard */}
 
