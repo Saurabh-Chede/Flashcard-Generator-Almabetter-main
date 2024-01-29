@@ -64,7 +64,7 @@ function CreateFlashCard() {
 
               {/* New Div */}
 
-              <div className="flex-col w-[70%] mt-1 ">
+              <div className="flex-col w-[70%] sm:w-[80%] sm:items-center w-100% relative mt-1 ">
                 <label htmlFor="group_Des" className="ml-2.5">
                   Description
                 </label>
@@ -72,7 +72,7 @@ function CreateFlashCard() {
                   name="group_Des"
                   id="group_Des"
                   placeholder="Group Description... "
-                  class=" rounded ml-2.5 text-sm mt-1 border border-gray-300 inField bg-gray-50 w-full w-200 h-28 resize-none inField"
+                  class=" rounded relative ml-2.5 text-sm pl-2 py-1 mt-1 border border-gray-300 inField bg-gray-50 w-full w-100 h-28 resize-none inField"
                 ></textarea>
               </div>
             </div>
