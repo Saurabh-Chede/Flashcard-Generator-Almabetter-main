@@ -35,7 +35,7 @@ function CreateFlashCard() {
         {({ values, handleBlur, handleChange, setFieldValue }) => (
           <Form>
             <div
-              className="bg-white w-[100%] h-[30%] p-[15px] flex flex-col text-left pl-[25px] rounded-md commonBorder"
+              className="bg-white w-[100%] h-[30%] p-[15px] flex flex-col text-left mt-0 pl-[25px] rounded-md commonBorder"
               name="createGroupDiv"
             >
               <div className="flex flex-col md:flex-row sm:flex-col">
