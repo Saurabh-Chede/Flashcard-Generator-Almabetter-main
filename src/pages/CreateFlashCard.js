@@ -1,7 +1,6 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { useState ,useSelector } from "react";
-import { Formik, Field, Form, FieldArray } from "formik";
+import { Formik, Field, Form } from "formik";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { MdUploadFile } from "react-icons/md";
 
@@ -42,7 +41,7 @@ function CreateFlashCard() {
                 <div className="flex flex-col">
                   <label
                     htmlFor="group_Name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Create Group
                   </label>
