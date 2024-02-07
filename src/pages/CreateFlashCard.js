@@ -41,7 +41,7 @@ function CreateFlashCard() {
                 <div className="flex flex-col">
                   <label
                     htmlFor="group_Name"
-                    class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Create Group
                   </label>
@@ -92,16 +92,16 @@ function CreateFlashCard() {
               className="w-[100%] mt-3 pt-1 bg-white  flex flex-col text-left pl-[25px] rounded-md commonBorder"
               name="TermCardfield"
             >
-              <div class="flex-col overflow-hidden bg-white rounded-md">
+              <div className="flex-col overflow-hidden bg-white rounded-md">
                 <div
                   name="termsDiv"
-                  class="relative flex-row flex-wrap w-full mt-2 border-gray-300 md:flex md:space-x-4 md:items-center"
+                  className="relative flex-row flex-wrap w-full mt-2 border-gray-300 md:flex md:space-x-4 md:items-center"
                 >
                   <div className="w-8 h-8 px-2 ml-4 text-xl text-center text-white bg-red-500 rounded-full ">
                     1
                   </div>
                   {/* enter term Field */}
-                  <div class="flex flex-col">
+                  <div className="flex flex-col">
                     <label htmlFor="term_Name" className="">
                       Enter Term*
                     </label>
