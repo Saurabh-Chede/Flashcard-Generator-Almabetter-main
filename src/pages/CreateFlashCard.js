@@ -12,9 +12,12 @@ import validateImage from "../validation/validateImage";
 import validationSchema from "../validation/validationSchema";
 import { GiCrossMark } from "react-icons/gi";
 
+// Create FlashCard Page for creating flashcards and render into my flashcard page.
 function CreateFlashCard() {
   const dispatch = useDispatch();
 
+
+//Accessing Data from redux store. 
   const formData = useSelector((state) => state.flashcard.formData);
   const addMoreTermS = (values, moreTerm) => {
     moreTerm.insert(values.term.length + 1, {
@@ -65,6 +68,7 @@ function CreateFlashCard() {
                   >
                     Create Group
                   </label>
+                  {/* this is input field for creating group name */}
                   <Field
                     name="group_Name"
                     id="group_Name"
@@ -105,13 +109,13 @@ function CreateFlashCard() {
                     </label>
                   )}
 
-                  {/*              */}
+                  {/* input field for uploading image */}
                   <input
                     className="hidden"
                     name="upload_Image"
                     id="upload_Image"
                     type="file"
-                    onClick={(e) => (e.target.value = null)} //selecting same image
+                    onClick={(e) => (e.target.value = null)} 
                     onChange={(e) => {
                       e.preventDefault();
                       // image validation
@@ -142,7 +146,7 @@ function CreateFlashCard() {
                 </div>
               </div>
 
-              {/* Description field started  */}
+              {/* Description field started from here */}
 
               <div className="flex flex-col ">
                 <label htmlFor="group_Des" className=" mt-2 text-sm text-gray-900 font-medium mb-2">
@@ -161,7 +165,7 @@ function CreateFlashCard() {
               </div>
             </div>
 
-            {/* term Division started from here */}
+            {/* term card Division started from here */}
 
             <div
               className="w-[100%] mt-3 pt-1 bg-white  flex flex-col text-left pl-[25px] rounded-md commonBorder"
@@ -182,7 +186,7 @@ function CreateFlashCard() {
                             {index + 1}
                           </div>
 
-                          {/* enter term Field */}
+                          {/* input field for term name */}
                           <div className="flex flex-col">
                             <label htmlFor={`term.${index}.term_Name`} className="text-sm font-medium text-gray-900">
                               Enter Term*
@@ -308,7 +312,7 @@ function CreateFlashCard() {
                         </div>
                       ))}
 
-                    {/*                  */}
+                    {/*  add more term button */}
                     <div
                       className="inline-block mt-4 mb-6 font-bold text-blue-700 cursor-pointer mx-7"
                       onClick={() => addMoreTermS(values, moreTerm)}
