@@ -28,8 +28,7 @@ In this section, you can review the created flashcards. Navigation between diffe
 This project was developed using a range of frontend technologies, including the `React` JavaScript library for the core structure, `Tailwind CSS` for creating a responsive user interface, `Redux` for efficient state management, and additional tools such as `React-icons`, `Formik`, `React-Router-Dom`, `jspdf`, `yup`, and `react-testing-library/jest` for testing purposes.
 
 ### `Deploy Link`
-
-
+https://flashcard-generator-alpha.vercel.app/
 
 ### `PROJECT CLONING AND RUNNING`
 
