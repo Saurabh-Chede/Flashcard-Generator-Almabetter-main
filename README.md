@@ -1,7 +1,9 @@
-# Getting Started with Create React App
+# `FLASHCARD GENERATOR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `Project Description`
+The Flashcard Generator project is a front-end capstone assignment given by Almabetter. It involves creating an application for generating flashcards within a group. This application provides functionalities such as creating cards, adding text and images, sharing, downloading, deleting, and printing the generated flashcards. The user interface of the application is designed to be fully responsive, ensuring a smooth experience across different devices.
 
+This Project Consists of 3 main pages:
 ## Available Scripts
 
 In the project directory, you can run:
