@@ -67,8 +67,8 @@ function MyFlashCard() {
                   src={item.upload_Image || pokeball}
                   alt=""
                 />
-                <h1 className="mt-4 font-bold ">{item.group_Name}</h1>
-                <h2 className="h-10 mt-1 text-gray-700">
+                <h1 className="mt-4 font-bold text-center ">{item.group_Name}</h1>
+                <h2 className="h-10 mt-1 text-gray-700 text-center">
                   {item.group_Des.length > 60
                     ? item.group_Des.slice(0, 60) + "..."
                     : item.group_Des}
